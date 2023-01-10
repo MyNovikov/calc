@@ -8,7 +8,7 @@ function evalua()//(2)сменил название функции
  let y = eval(x);
  document.getElementById("textval").value = y;
 }
-function clr()
+function clearTextValue()
 {
  document.getElementById("textval").value = ""
 }
