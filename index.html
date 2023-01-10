@@ -29,27 +29,11 @@
 <td><input type="button" value="/" onclick="display('/')"/> </td>
 <td><input type="button" value="." onclick="display('.')"/> </td>
 <td><input type="button" value="0" onclick="display('0')"/> </td>
-<td><input type="button" value="=" onclick="evaluate()"/> </td>
+<td><input type="button" value="=" onclick="evalua()"/> </td>
 </tr>
 </table>
 </body>
 </center>
-<script>
-function display(val)
-{
- document.getElementById("textval").value+=val
- }
-function evaluate()
-{
- let x = document.getElementById("textval").value
- let y = eval(x)
- document.getElementById("textval").value = y
-}
-function clr()
-{
- document.getElementById("textval").value = ""
-}
-</script>
 <style>
 input[type="button"]
 {
@@ -69,4 +53,5 @@ border-color: white;
 width:100%
 }
 </style>
+<script src="js/main.js"></script>
 </html>
